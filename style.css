@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+}
+
+html{
+  height: 100%;
+  width: 100%;
+  cursor: url("./images/target.png"), auto;
+}
+
+body {
+  background: url("https://i.pinimg.com/originals/39/5e/53/395e5325b9ddcbdd28c3915bdf64b713.jpg");
+}
+
+.score{
+  width: 400px;
+  height: 125px;
+  background-color: #202002a8;
+  text-align: center;
+  margin: 200px auto;
+  padding-top: 30px;
+}
+
+.score h1{
+  font-size: 20px;
+}
+.score h2{
+  color: rgb(227, 241, 33);
+  margin-top: 10px;
+}
+
+.score p{
+  margin-top: 10px;
+}
+.stick {
+  position: fixed;
+  top: 50%;
+
+}
+
+.monkeyLeft {
+  right: -150px;
+  animation: 0.7s monkeyLeft alternate infinite;
+  transform: rotateZ(-59deg);
+
+}
+.monkeyRight {
+  left: -50px;
+  animation: 0.7s monkeyRight alternate infinite;
+  transform: rotateZ(89deg);
+}
+
+@keyframes monkeyLeft {
+  from {
+      right: -200px;
+  }
+
+  to {
+      right: 0px;
+  }
+}
+
+@keyframes monkeyRight {
+  from {
+      left: -200px;
+  }
+
+  to {
+      left: 0px;
+  }
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
