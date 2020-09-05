@@ -8,6 +8,16 @@ stick[1].addEventListener('click', () => {
 })
 
 setInterval(() => {
-    stick[0].style.top = `${Math.random() * (100 - 10) - 10}%`
-    stick[1].style.top = `${Math.random() * (100 - 10) - 10}%`
+    stick[0].style.display = 'block';
+    stick[1].style.display = 'block';
+
+    if(Math.random() * (10 - 0) > 5){
+        stick[0].style.top = `${Math.random() * (100 - 10) - 10}%`
+        stick[1].style.display = 'none';
+    }else{
+        stick[1].style.top = `${Math.random() * (100 - 10) - 10}%`
+        stick[0].style.display = 'none';
+    }   
+    
+     
 }, 1400);

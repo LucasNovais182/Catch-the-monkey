@@ -39,6 +39,7 @@ body {
 .stick {
   position: fixed;
   top: 50%;
+  display: none;
 
 }
 
