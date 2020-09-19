@@ -9,7 +9,7 @@
 html{
   height: 100%;
   width: 100%;
-  cursor: url("./images/target.png"), auto;
+  cursor: url("./assets/images/target.png"), auto;
 }
 
 body {
@@ -38,21 +38,33 @@ body {
 }
 .stick {
   position: fixed;
-  top: 50%;
   display: none;
+}
+
+.sideStick{
+  top: 50%;
 
 }
 
 .monkeyLeft {
   right: -150px;
-  animation: 0.7s monkeyLeft alternate infinite;
+  animation: 1.0s monkeyLeft alternate infinite;
   transform: rotateZ(-59deg);
 
 }
 .monkeyRight {
   left: -50px;
-  animation: 0.7s monkeyRight alternate infinite;
+  animation: 1.0s monkeyRight alternate infinite;
   transform: rotateZ(89deg);
+}
+.monkeyTop {
+  top: -50px;
+  animation: 1.0s monkeyTop alternate infinite;
+  transform: rotateZ(180deg);
+}
+.monkeyBottom {
+  bottom: -150px;
+  animation: 1.0s monkeyBottom alternate infinite;
 }
 
 @keyframes monkeyLeft {
@@ -72,6 +84,25 @@ body {
 
   to {
       left: 0px;
+  }
+}
+
+@keyframes monkeyTop {
+  from {
+      top: -200px;
+  }
+
+  to {
+      top: 0px;
+  }
+}
+@keyframes monkeyBottom {
+  from {
+      bottom: -200px;
+  }
+
+  to {
+      bottom: 0px;
   }
 }
 
