@@ -3,15 +3,19 @@ var score = document.getElementsByTagName('p')[0]
 
 stick[0].addEventListener('click', () => {
     score.innerHTML = 1 + Number(score.innerHTML)
+    document.getElementsByTagName('audio')[0].play()
 })
 stick[1].addEventListener('click', () => {
     score.innerHTML = 1 + Number(score.innerHTML)
+    document.getElementsByTagName('audio')[0].play()
 })
 stick[2].addEventListener('click', () => {
     score.innerHTML = 1 + Number(score.innerHTML)
+    document.getElementsByTagName('audio')[0].play()
 })
 stick[3].addEventListener('click', () => {
     score.innerHTML = 1 + Number(score.innerHTML)
+    document.getElementsByTagName('audio')[0].play()
 })
 
 setInterval(() => {
